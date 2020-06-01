@@ -1,0 +1,14 @@
+Este é meu primeiro bot em Discord.js, literalmente meu primeiro projeto, decidi não utilizar o command handler
+por pura preguiça, porém o bot está funcionando perfeitamente, irei postar comando por comando.
+
+Requires utilizados:
+
+const botconfig = require("./botconfig.json");
+const tokenfile = require("./tokenfile.json");
+const Discord = require("discord.js");
+const client = new Discord.Client({disableEveryone: true});
+const ms = require("ms");
+const fs = require("fs");
+let xp = require("./xp.json");
+let coins = require("./coins.json");
+const dailycooldown = new Set();
